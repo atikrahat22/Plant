@@ -4,18 +4,18 @@ import { toast } from 'react-toastify';
 import Banner from '../components/Banner';
 import PlantCard from '../components/PlantCard';
 
-export default React.memo(function HomeComponent(){
+export default React.memo(function HomeComponent() {
   const [plants, setPlants] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch('/plants.json')
-      .then(r=>r.json())
+      .then(r => r.json())
       .then(setPlants)
-      .catch(()=>setPlants([]));
+      .catch(() => setPlants([]));
     document.title = 'GreenNest | Home';
-  },[]);
+  }, []);
 
-  const topRated = [...plants].sort((a,b)=> parseFloat(b.rating)-parseFloat(a.rating)).slice(0,8);
+  const topRated = [...plants].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating)).slice(0, 8);
 
   return (
     <main>
@@ -106,7 +106,7 @@ export default React.memo(function HomeComponent(){
         </motion.p>
         <motion.form
           className="form"
-          onSubmit={(e)=>{ e.preventDefault(); toast.success('🌱 Successfully subscribed to plant care tips!'); }}
+          onSubmit={(e) => { e.preventDefault(); toast.success('🌱 Successfully subscribed to plant care tips!'); }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.5 }}
@@ -440,6 +440,9 @@ export default React.memo(function HomeComponent(){
               Specializes in rare and exotic houseplants. Provides expert guidance on collecting and caring for unique specimens.
             </p>
           </motion.div>
+        </motion.div>
+
+      </motion.section>
       {/* Plant of the Week Section */}
       <motion.section
         className="container"
@@ -524,6 +527,7 @@ export default React.memo(function HomeComponent(){
           </motion.div>
         </motion.div>
       </motion.section>
+
     </main>
   );
 });
