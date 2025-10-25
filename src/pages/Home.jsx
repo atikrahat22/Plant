@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import Banner from '../components/Banner';
 import PlantCard from '../components/PlantCard';
 
-export default memo(function Home(){
+export default React.memo(function HomeComponent(){
   const [plants, setPlants] = useState([]);
 
   useEffect(()=>{
