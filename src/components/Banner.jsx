@@ -117,23 +117,6 @@ export default function Banner(){
                       className="hero-cta-button"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      style={{
-                        background: 'linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4)',
-                        backgroundSize: '300% 300%',
-                        animation: 'gradientShift 3s ease-in-out infinite',
-                        border: 'none',
-                        padding: '15px 40px',
-                        borderRadius: '30px',
-                        color: 'white',
-                        fontSize: '1.2rem',
-                        fontWeight: 700,
-                        cursor: 'pointer',
-                        boxShadow: '0 10px 40px rgba(255, 107, 107, 0.4)',
-                        marginTop: '25px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '1px',
-                        transition: 'all 0.3s ease'
-                      }}
                       onMouseEnter={(e) => {
                         e.target.style.transform = 'translateY(-5px) scale(1.05)';
                         e.target.style.boxShadow = '0 15px 50px rgba(255, 107, 107, 0.6)';

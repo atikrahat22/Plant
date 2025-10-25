@@ -158,5 +158,45 @@
     "description": "Embark on an epic adventure in the beautiful world of Teyvat. Collect characters, explore vast landscapes, and uncover the mysteries of this free-to-play action RPG.",
     "ratings": "4.7",
     "developer": "miHoYo"
+  },
+  {
+    "id": "17",
+    "title": "Among Us",
+    "coverPhoto": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "category": "Social Deduction",
+    "downloadLink": "https://www.innersloth.com/games/among-us/",
+    "description": "Play online or over local WiFi with 4-15 players as you attempt to prep your spaceship for departure, but beware as one will be an impostor bent on killing everyone!",
+    "ratings": "4.3",
+    "developer": "InnerSloth"
+  },
+  {
+    "id": "18",
+    "title": "Roblox",
+    "coverPhoto": "https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=400&h=300&fit=crop",
+    "category": "Sandbox",
+    "downloadLink": "https://www.roblox.com/",
+    "description": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each other in immersive, user-generated 3D worlds.",
+    "ratings": "4.5",
+    "developer": "Roblox Corporation"
+  },
+  {
+    "id": "19",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "The Witcher 3: Wild Hunt is a story-driven, next-generation open world role-playing game set in a visually stunning fantasy universe. Become a monster slayer and make choices that go beyond good & evil.",
+    "ratings": "4.9",
+    "developer": "CD Projekt RED"
+  },
+  {
+    "id": "20",
+    "title": "Elden Ring",
+    "coverPhoto": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    "category": "Action RPG",
+    "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+    "description": "Elden Ring is a fantasy action-RPG adventure set within a world created by Hidetaka Miyazaki and George R.R. Martin. Explore the vast world, fight bosses, and uncover the mysteries.",
+    "ratings": "4.8",
+    "developer": "FromSoftware"
   }
 ]
