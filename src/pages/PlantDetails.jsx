@@ -133,6 +133,9 @@ export default function PlantDetails(){
             }}
             whileHover={{ scale: 1.02, rotate: 1 }}
             transition={{ duration: 0.4 }}
+            onError={(e) => {
+              e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Available';
+            }}
           />
 
           <motion.div

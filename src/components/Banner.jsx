@@ -72,6 +72,9 @@ export default function Banner(){
                   src={slide.url}
                   alt={slide.title}
                   className="banner-image"
+                  onError={(e) => {
+                    e.target.src = 'https://via.placeholder.com/1920x800?text=Image+Not+Available';
+                  }}
                 />
                 <div className="banner-overlay">
                   <motion.div

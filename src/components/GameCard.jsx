@@ -31,6 +31,9 @@ export default function GameCard({ game }) {
             marginBottom: 0
           }}
           loading="lazy"
+          onError={(e) => {
+            e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Available';
+          }}
         />
         <motion.div
           style={{
