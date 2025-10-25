@@ -440,6 +440,88 @@ export default function Home(){
               Specializes in rare and exotic houseplants. Provides expert guidance on collecting and caring for unique specimens.
             </p>
           </motion.div>
+      {/* Plant of the Week Section */}
+      <motion.section
+        className="container"
+        style={{
+          marginTop: 60,
+          textAlign: 'center',
+          background: 'linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(22, 163, 74, 0.1))',
+          borderRadius: 20,
+          padding: 40,
+          border: '1px solid rgba(22, 163, 74, 0.2)'
+        }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6, duration: 0.6 }}
+      >
+        <motion.h3
+          style={{
+            fontSize: '2rem',
+            color: '#16a34a',
+            textShadow: '0 0 15px rgba(22, 163, 74, 0.6)',
+            marginBottom: 30
+          }}
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          🌟 Plant of the Week
+        </motion.h3>
+
+        <motion.div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: 30,
+            marginTop: 30
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+        >
+          <motion.div
+            style={{
+              background: 'rgba(255, 255, 255, 0.9)',
+              borderRadius: 15,
+              padding: 25,
+              boxShadow: '0 8px 25px rgba(22, 163, 74, 0.2)',
+              border: '1px solid rgba(22, 163, 74, 0.1)'
+            }}
+            whileHover={{ scale: 1.05, y: -5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.img
+              src="https://images.unsplash.com/photo-1572688484438-313a6e50c333?w=300&h=300&fit=crop&crop=center"
+              alt="Plant of the Week"
+              style={{
+                width: 150,
+                height: 150,
+                borderRadius: '50%',
+                objectFit: 'cover',
+                marginBottom: 15,
+                border: '3px solid #16a34a'
+              }}
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              transition={{ duration: 0.3 }}
+            />
+            <h4 style={{ color: '#16a34a', marginBottom: 8, fontSize: '1.2rem' }}>Snake Plant</h4>
+            <p style={{ color: '#15803d', fontSize: '0.9rem', lineHeight: 1.4 }}>
+              Our featured plant this week! Extremely low-maintenance and perfect for purifying indoor air. Great for beginners and adds a modern touch to any space.
+            </p>
+            <motion.button
+              className="button"
+              style={{
+                background: 'linear-gradient(135deg, #4ade80, #16a34a)',
+                fontSize: '1rem',
+                padding: '12px 25px',
+                marginTop: 15
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              🛒 Order Now
+            </motion.button>
+          </motion.div>
         </motion.div>
       </motion.section>
     </main>
