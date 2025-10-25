@@ -1,0 +1,98 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light. Perfect for beginners and busy plant parents.",
+    "image": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?w=400&h=400&fit=crop&crop=center",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 25,
+    "rating": 4.6,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "Beautiful white flowers and excellent air-purifying qualities. Great for adding elegance to any room.",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop&crop=center",
+    "providerName": "Green Haven Nursery"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Spider Plant",
+    "category": "Hanging",
+    "price": 15,
+    "rating": 4.9,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "Fast-growing with long, arching leaves. Perfect for hanging baskets and very forgiving for beginners.",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop&crop=center",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Decorative",
+    "price": 45,
+    "rating": 4.4,
+    "availableStock": 5,
+    "careLevel": "Medium",
+    "description": "Large, glossy leaves make a dramatic statement. A popular choice for modern interior design.",
+    "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=400&h=400&fit=crop&crop=center",
+    "providerName": "Premium Plant Co"
+  },
+  {
+    "plantId": 5,
+    "plantName": "ZZ Plant",
+    "category": "Succulent",
+    "price": 32,
+    "rating": 4.7,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "Extremely low-maintenance with thick, waxy leaves. Tolerates neglect and low light conditions perfectly.",
+    "image": "https://images.unsplash.com/photo-1509423353981-b89aac310f9d?w=400&h=400&fit=crop&crop=center",
+    "providerName": "Green Haven Nursery"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Monstera Deliciosa",
+    "category": "Tropical",
+    "price": 38,
+    "rating": 4.5,
+    "availableStock": 7,
+    "careLevel": "Medium",
+    "description": "Iconic split leaves and tropical vibes. Adds a jungle-like atmosphere to any indoor space.",
+    "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&h=400&fit=crop&crop=center",
+    "providerName": "Premium Plant Co"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Pothos",
+    "category": "Hanging",
+    "price": 12,
+    "rating": 4.8,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "Heart-shaped leaves and trailing vines. One of the most popular and easiest houseplants to grow.",
+    "image": "https://images.unsplash.com/photo-1545241047-94683c42cbcb?w=400&h=400&fit=crop&crop=center",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Rubber Plant",
+    "category": "Decorative",
+    "price": 28,
+    "rating": 4.3,
+    "availableStock": 9,
+    "careLevel": "Easy",
+    "description": "Thick, glossy leaves and upright growth. A classic houseplant that adds height and structure.",
+    "image": "https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?w=400&h=400&fit=crop&crop=center",
+    "providerName": "Green Haven Nursery"
+  }
+]

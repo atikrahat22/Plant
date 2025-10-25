@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "title": "PlayerUnknown's Battlegrounds",
+    "coverPhoto": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps. Drop into the battlefield with 99 other players and be the last one standing.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Experience the thrill of Call of Duty on mobile! Fast-paced multiplayer action with classic modes like Team Deathmatch, Domination, and Battle Royale. Customize your loadout and climb the ranks.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Fortnite",
+    "coverPhoto": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/en-US/home",
+    "description": "Build, battle, and create in Fortnite! A free-to-play battle royale game where you can build structures, fight enemies, and survive with friends in an ever-changing island.",
+    "ratings": "4.4",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "4",
+    "title": "Minecraft",
+    "coverPhoto": "https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=400&h=300&fit=crop",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/en-us",
+    "description": "Explore infinite worlds and build everything from simple houses to grand castles. Play in creative mode with unlimited resources or mine deep in survival mode.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "5",
+    "title": "Grand Theft Auto V",
+    "coverPhoto": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "category": "Action",
+    "downloadLink": "https://www.rockstargames.com/gta-v",
+    "description": "Experience the thrilling open-world adventure in Los Santos. Complete missions, explore the vast city, and engage in various activities in this critically acclaimed action game.",
+    "ratings": "4.7",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "6",
+    "title": "Apex Legends",
+    "coverPhoto": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=300&fit=crop",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Choose from a diverse cast of characters and engage in fast-paced battles. Team up with friends and use unique abilities to become the champion in this free-to-play battle royale.",
+    "ratings": "4.5",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "7",
+    "title": "FIFA 24",
+    "coverPhoto": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    "category": "Sports",
+    "downloadLink": "https://www.ea.com/games/fifa/fifa-24",
+    "description": "Play the world's most popular sport with authentic teams, players, and stadiums. Experience realistic gameplay with advanced AI and stunning graphics in FIFA 24.",
+    "ratings": "4.3",
+    "developer": "EA Sports"
+  },
+  {
+    "id": "8",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=300&fit=crop",
+    "category": "RPG",
+    "downloadLink": "https://www.cyberpunk.net/en/",
+    "description": "Enter the dark future of Night City, a dangerous megalopolis obsessed with power and body modification. Customize your character and make choices that affect the story.",
+    "ratings": "4.2",
+    "developer": "CD Projekt RED"
+  },
+  {
+    "id": "9",
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "coverPhoto": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop",
+    "category": "Adventure",
+    "downloadLink": "https://www.zelda.com/breath-of-the-wild/",
+    "description": "Explore the vast kingdom of Hyrule in this open-world adventure. Solve puzzles, battle enemies, and discover the secrets of this beautiful and immersive world.",
+    "ratings": "4.9",
+    "developer": "Nintendo"
+  },
+  {
+    "id": "10",
+    "title": "Valorant",
+    "coverPhoto": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com/en-us/",
+    "description": "A 5v5 character-based tactical shooter where precise gunplay meets unique agent abilities. Choose your agent and compete in various game modes with strategic gameplay.",
+    "ratings": "4.6",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "11",
+    "title": "Rocket League",
+    "coverPhoto": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "category": "Sports",
+    "downloadLink": "https://www.rocketleague.com/",
+    "description": "Football meets driving in this high-octane sports game. Score goals with rocket-powered cars in this physics-based multiplayer phenomenon.",
+    "ratings": "4.4",
+    "developer": "Psyonix"
+  },
+  {
+    "id": "12",
+    "title": "Overwatch 2",
+    "coverPhoto": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop",
+    "category": "FPS",
+    "downloadLink": "https://overwatch.blizzard.com/en-us/",
+    "description": "Team-based multiplayer first-person shooter with a diverse cast of heroes. Work together to complete objectives and outplay the enemy team in various game modes.",
+    "ratings": "4.1",
+    "developer": "Blizzard Entertainment"
+  },
+  {
+    "id": "13",
+    "title": "League of Legends",
+    "coverPhoto": "https://images.unsplash.com/photo-1556438064-2d7646166914?w=400&h=300&fit=crop",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "The world's most popular MOBA game featuring strategic 5v5 battles, unique champions, and competitive gameplay. Master your favorite champion and climb the ranked ladder.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "14",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=300&fit=crop",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "The legendary tactical FPS returns with enhanced graphics and gameplay. Experience intense 5v5 matches with precise gunplay and strategic team coordination.",
+    "ratings": "4.8",
+    "developer": "Valve Corporation"
+  },
+  {
+    "id": "15",
+    "title": "Dota 2",
+    "coverPhoto": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "category": "MOBA",
+    "downloadLink": "https://www.dota2.com/",
+    "description": "Join millions of players in epic 5v5 battles featuring over 120 unique heroes. Master complex strategies and compete in the world's largest esports tournaments.",
+    "ratings": "4.6",
+    "developer": "Valve Corporation"
+  },
+  {
+    "id": "16",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=400&h=300&fit=crop",
+    "category": "RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "Embark on an epic adventure in the beautiful world of Teyvat. Collect characters, explore vast landscapes, and uncover the mysteries of this free-to-play action RPG.",
+    "ratings": "4.7",
+    "developer": "miHoYo"
+  }
+]
