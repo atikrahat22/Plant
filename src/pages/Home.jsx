@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import Banner from '../components/Banner';
 import PlantCard from '../components/PlantCard';
 
-export default function Home(){
+export default memo(function Home(){
   const [plants, setPlants] = useState([]);
 
   useEffect(()=>{
@@ -526,4 +526,4 @@ export default function Home(){
       </motion.section>
     </main>
   );
-}
+});
