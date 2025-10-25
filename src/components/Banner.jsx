@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
 
-export default function Banner(){
-  const slides = [
+export default React.memo(function Banner(){
+  const slides = useMemo(() => [
     {
       url: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&h=800&fit=crop&crop=center',
       title: '🌱 Discover Your Green Paradise',
@@ -28,32 +28,8 @@ export default function Banner(){
       title: '✨ Professional Consultation Available',
       subtitle: 'Book a session with our plant care experts for personalized advice and plant selection guidance',
       cta: 'Book Consultation'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&h=800&fit=crop&crop=center',
-      title: '🎮 Game Reviews & Recommendations',
-      subtitle: 'Discover top-rated games with in-depth reviews, ratings, and download links for all your gaming needs',
-      cta: 'Browse Games'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop&crop=center',
-      title: '🌟 Community Favorites',
-      subtitle: 'Explore the most loved plants and games by our community of enthusiasts and plant parents',
-      cta: 'View Favorites'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&h=800&fit=crop&crop=center',
-      title: '📚 Learn & Grow',
-      subtitle: 'Access comprehensive care guides, tutorials, and tips to become a plant and gaming expert',
-      cta: 'Start Learning'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=1920&h=800&fit=crop&crop=center',
-      title: '🚀 New Arrivals',
-      subtitle: 'Check out the latest plant varieties and trending games added to our collection this week',
-      cta: 'Explore New'
     }
-  ];
+  ], []);
 
   return (
     <div className="banner-full-width">
@@ -146,4 +122,4 @@ export default function Banner(){
       </div>
     </div>
   );
-}
+});

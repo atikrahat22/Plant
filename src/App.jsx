@@ -11,7 +11,6 @@ import PlantDetails from './pages/PlantDetails';
 import Profile from './pages/Profile';
 import UpdateProfile from './pages/UpdateProfile';
 import ForgotPassword from './pages/ForgotPassword';
-import AllReviews from './pages/AllReviews';
 import NotFound from './pages/NotFound';
 import PrivateRoute from './routes/PrivateRoute';
 
@@ -24,7 +23,6 @@ export default function App(){
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/all-reviews" element={<AllReviews />} />
         <Route path="/plants/:id" element={<PrivateRoute><PlantDetails /></PrivateRoute>} />
         <Route path="/my-profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
         <Route path="/update-profile" element={<PrivateRoute><UpdateProfile /></PrivateRoute>} />
