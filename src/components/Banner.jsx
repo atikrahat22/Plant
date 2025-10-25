@@ -28,6 +28,30 @@ export default function Banner(){
       title: '✨ Professional Consultation Available',
       subtitle: 'Book a session with our plant care experts for personalized advice and plant selection guidance',
       cta: 'Book Consultation'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&h=800&fit=crop&crop=center',
+      title: '🎮 Game Reviews & Recommendations',
+      subtitle: 'Discover top-rated games with in-depth reviews, ratings, and download links for all your gaming needs',
+      cta: 'Browse Games'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop&crop=center',
+      title: '🌟 Community Favorites',
+      subtitle: 'Explore the most loved plants and games by our community of enthusiasts and plant parents',
+      cta: 'View Favorites'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&h=800&fit=crop&crop=center',
+      title: '📚 Learn & Grow',
+      subtitle: 'Access comprehensive care guides, tutorials, and tips to become a plant and gaming expert',
+      cta: 'Start Learning'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=1920&h=800&fit=crop&crop=center',
+      title: '🚀 New Arrivals',
+      subtitle: 'Check out the latest plant varieties and trending games added to our collection this week',
+      cta: 'Explore New'
     }
   ];
 
@@ -94,16 +118,31 @@ export default function Banner(){
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       style={{
-                        background: 'linear-gradient(135deg, #4ade80, #16a34a)',
+                        background: 'linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4)',
+                        backgroundSize: '300% 300%',
+                        animation: 'gradientShift 3s ease-in-out infinite',
                         border: 'none',
-                        padding: '12px 30px',
-                        borderRadius: '25px',
+                        padding: '15px 40px',
+                        borderRadius: '30px',
                         color: 'white',
-                        fontSize: '1.1rem',
-                        fontWeight: '600',
+                        fontSize: '1.2rem',
+                        fontWeight: 700,
                         cursor: 'pointer',
-                        boxShadow: '0 8px 25px rgba(74, 222, 128, 0.4)',
-                        marginTop: '20px'
+                        boxShadow: '0 10px 40px rgba(255, 107, 107, 0.4)',
+                        marginTop: '25px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        transition: 'all 0.3s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.transform = 'translateY(-5px) scale(1.05)';
+                        e.target.style.boxShadow = '0 15px 50px rgba(255, 107, 107, 0.6)';
+                        e.target.style.backgroundPosition = '100% 0';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.transform = 'translateY(0) scale(1)';
+                        e.target.style.boxShadow = '0 10px 40px rgba(255, 107, 107, 0.4)';
+                        e.target.style.backgroundPosition = '0% 50%';
                       }}
                     >
                       {slide.cta}
