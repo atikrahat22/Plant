@@ -21,7 +21,8 @@ export default function Login(){
     try{
       await login(email, password);
       toast.success('🌱 Welcome back to GreenNest!');
-      navigate('/');
+      // Navigate to intended location or home
+      navigate(loc.state?.from?.pathname || '/');
     }catch(err){
       toast.error(err.message || 'Login failed. Please try again.');
     }
@@ -33,7 +34,8 @@ export default function Login(){
     try {
       await googleLogin();
       toast.success('🌱 Successfully logged in with Google!');
-      navigate('/');
+      // Navigate to intended location or home
+      navigate(loc.state?.from?.pathname || '/');
     } catch(err) {
       toast.error(err.message || 'Google login failed. Please try again.');
     }

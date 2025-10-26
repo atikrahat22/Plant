@@ -8,7 +8,7 @@ export default function ForgotPassword(){
   const loc = useLocation();
   const [email, setEmail] = useState(loc.state?.email || '');
 
-  useEffect(()=>{ document.title = 'GameHub | Reset Password'; },[]);
+  useEffect(()=>{ document.title = 'GreenNest | Reset Password'; },[]);
 
   const handle = async (e)=>{
     e.preventDefault();

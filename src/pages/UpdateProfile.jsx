@@ -9,14 +9,14 @@ export default function UpdateProfile(){
   const [photo, setPhoto] = useState(user?.photoURL || '');
   const navigate = useNavigate();
 
-  useEffect(()=>{ document.title = 'GameHub | Update Profile'; },[]);
+  useEffect(()=>{ document.title = 'GreenNest | Update Profile'; },[]);
 
   const handle = async (e)=>{
     e.preventDefault();
     try{
       await updateUser({ displayName: name, photoURL: photo });
-      alert('✨ Profile updated successfully!');
-      navigate('/profile');
+      alert('🌱 Profile updated successfully!');
+      navigate('/my-profile');
     }catch(err){ alert(err.message); }
   };
 
@@ -46,16 +46,16 @@ export default function UpdateProfile(){
         <motion.h2
           style={{
             textAlign: 'center',
-            color: '#ff006e',
+            color: '#16a34a',
             fontSize: '2.2rem',
             marginBottom: 25,
-            textShadow: '0 0 15px rgba(255, 0, 110, 0.6)'
+            textShadow: '0 0 15px rgba(22, 163, 74, 0.6)'
           }}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
         >
-          ✨ Update Your Profile
+          🌱 Update Your Profile
         </motion.h2>
 
         <motion.form
@@ -78,12 +78,12 @@ export default function UpdateProfile(){
           >
             <label
               style={{
-                color: '#00ffff',
+                color: '#15803d',
                 fontWeight: 600,
                 fontSize: '1rem',
                 marginBottom: 8,
                 display: 'block',
-                textShadow: '0 0 5px rgba(0, 255, 255, 0.3)'
+                textShadow: '0 0 5px rgba(21, 128, 61, 0.3)'
               }}
             >
               👤 Display Name
@@ -94,9 +94,9 @@ export default function UpdateProfile(){
               onChange={e=>setName(e.target.value)}
               placeholder="Enter your display name"
               style={{
-                border: '1px solid rgba(0, 255, 255, 0.3)',
-                background: 'rgba(0, 255, 255, 0.1)',
-                color: '#00ffff',
+                border: '1px solid rgba(22, 163, 74, 0.3)',
+                background: 'rgba(22, 163, 74, 0.1)',
+                color: '#16a34a',
                 textAlign: 'center',
                 fontWeight: 600,
                 marginBottom: 15
@@ -111,12 +111,12 @@ export default function UpdateProfile(){
           >
             <label
               style={{
-                color: '#ffbe0b',
+                color: '#15803d',
                 fontWeight: 600,
                 fontSize: '1rem',
                 marginBottom: 8,
                 display: 'block',
-                textShadow: '0 0 5px rgba(255, 190, 11, 0.3)'
+                textShadow: '0 0 5px rgba(21, 128, 61, 0.3)'
               }}
             >
               📸 Profile Photo URL
@@ -127,9 +127,9 @@ export default function UpdateProfile(){
               onChange={e=>setPhoto(e.target.value)}
               placeholder="https://example.com/your-photo.jpg"
               style={{
-                border: '1px solid rgba(255, 190, 11, 0.3)',
-                background: 'rgba(255, 190, 11, 0.1)',
-                color: '#ffbe0b',
+                border: '1px solid rgba(22, 163, 74, 0.3)',
+                background: 'rgba(22, 163, 74, 0.1)',
+                color: '#16a34a',
                 textAlign: 'center',
                 fontWeight: 600,
                 marginBottom: 20
@@ -141,12 +141,11 @@ export default function UpdateProfile(){
             className="button"
             type="submit"
             style={{
-              background: 'linear-gradient(135deg, #ff006e, #8338ec, #00ffff)',
-              backgroundSize: '200% 200%',
-              animation: 'rainbow 3s ease-in-out infinite',
+              background: 'linear-gradient(135deg, #4ade80, #16a34a)',
               fontSize: '1.1rem',
               padding: '15px 30px',
-              width: '100%'
+              width: '100%',
+              boxShadow: '0 8px 25px rgba(74, 222, 128, 0.4)'
             }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -154,7 +153,7 @@ export default function UpdateProfile(){
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            🚀 Update Profile
+            🌱 Update Profile
           </motion.button>
         </motion.form>
 
@@ -162,9 +161,9 @@ export default function UpdateProfile(){
           style={{
             marginTop: 20,
             padding: 15,
-            background: 'rgba(6, 255, 165, 0.1)',
+            background: 'rgba(22, 163, 74, 0.1)',
             borderRadius: 15,
-            border: '1px solid rgba(6, 255, 165, 0.3)'
+            border: '1px solid rgba(22, 163, 74, 0.3)'
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -172,17 +171,17 @@ export default function UpdateProfile(){
         >
           <motion.p
             style={{
-              color: '#06ffa5',
+              color: '#16a34a',
               fontSize: '0.9rem',
               margin: 0,
               textAlign: 'center',
-              textShadow: '0 0 5px rgba(6, 255, 165, 0.3)'
+              textShadow: '0 0 5px rgba(22, 163, 74, 0.3)'
             }}
             animate={{
               textShadow: [
-                '0 0 5px rgba(6, 255, 165, 0.3)',
-                '0 0 15px rgba(6, 255, 165, 0.6)',
-                '0 0 5px rgba(6, 255, 165, 0.3)'
+                '0 0 5px rgba(22, 163, 74, 0.3)',
+                '0 0 15px rgba(22, 163, 74, 0.6)',
+                '0 0 5px rgba(22, 163, 74, 0.3)'
               ]
             }}
             transition={{ duration: 2, repeat: Infinity }}

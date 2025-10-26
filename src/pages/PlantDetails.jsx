@@ -121,7 +121,7 @@ export default function PlantDetails(){
           </motion.h1>
 
           <motion.img
-            src={plant.image}
+            src={plant.imageUrl}
             alt={plant.plantName}
             style={{
               width:'100%',
@@ -284,7 +284,28 @@ export default function PlantDetails(){
           >
             {plant.description}
           </motion.p>
-        </motion.div>
+
+          <motion.button
+            style={{
+              background: 'linear-gradient(135deg, #22c55e, #16a34a)',
+              color: 'white',
+              border: 'none',
+              padding: '15px 30px',
+              borderRadius: '25px',
+              fontSize: '1.2rem',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              marginTop: '20px',
+              boxShadow: '0 8px 25px rgba(34, 197, 94, 0.4)'
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              toast.success(`🛒 ${plant.plantName} added to cart!`);
+            }}
+          >
+            🛒 Buy Now - ${plant.price}
+          </motion.button>
 
         {/* Consultation Booking Section */}
         <motion.div

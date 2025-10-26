@@ -1,33 +1,58 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { Suspense, lazy, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import PlantDetails from './pages/PlantDetails';
-import Profile from './pages/Profile';
-import UpdateProfile from './pages/UpdateProfile';
-import ForgotPassword from './pages/ForgotPassword';
-import NotFound from './pages/NotFound';
-import PrivateRoute from './routes/PrivateRoute';
+import LoadingSpinner from './components/LoadingSpinner';
+
+// Lazy load components
+const Home = lazy(() => import('./pages/Home'));
+const Login = lazy(() => import('./pages/Login'));
+const Register = lazy(() => import('./pages/Register'));
+const PlantDetails = lazy(() => import('./pages/PlantDetails'));
+const Plants = lazy(() => import('./pages/Plants'));
+const Profile = lazy(() => import('./pages/Profile'));
+const UpdateProfile = lazy(() => import('./pages/UpdateProfile'));
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const PrivateRoute = lazy(() => import('./routes/PrivateRoute'));
 
 export default function App(){
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/plants/:id" element={<PrivateRoute><PlantDetails /></PrivateRoute>} />
-        <Route path="/my-profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
-        <Route path="/update-profile" element={<PrivateRoute><UpdateProfile /></PrivateRoute>} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/plants" element={<Plants />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/plants/:id" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PrivateRoute><PlantDetails /></PrivateRoute>
+            </Suspense>
+          } />
+          <Route path="/my-profile" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PrivateRoute><Profile /></PrivateRoute>
+            </Suspense>
+          } />
+          <Route path="/update-profile" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PrivateRoute><UpdateProfile /></PrivateRoute>
+            </Suspense>
+          } />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
       <Footer />
       <ToastContainer
         position="top-right"
